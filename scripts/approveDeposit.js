@@ -14,7 +14,7 @@ async function main() {
   const [signer] = await ethers.getSigners();
 
   const ferrari_contract = await ethers.getContractFactory("Ferrari");
-  const ferrari = await ferrari_contract.attach('0x81dd81A68E5c7C3F7b7a4a0fB43e04F274C9BF53');
+  const ferrari = await ferrari_contract.attach('0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199');
 
   const fxRootAddress = '0xF9bc4a80464E48369303196645e876c8C7D972de';
   const fxRoot = await ethers.getContractAt(FXRootContractAbi, fxRootAddress);
